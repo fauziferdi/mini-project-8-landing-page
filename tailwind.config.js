@@ -1,13 +1,19 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
+      sansbold: ["Open Sans Bold", ...defaultTheme.fontFamily.sans],
+    },
     extend: {
       colors: {
-        primary: "#1fb6ff",
+        primary: "#FEC00A",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
   // prefix: "tw-",
 };

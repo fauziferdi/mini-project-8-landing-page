@@ -3,7 +3,20 @@ import React from "react";
 const AdsComponent = () => {
   return (
     <>
-      <h1>Ads Component</h1>
+      <div class="relative bg-primary px-4 py-3 flex items-center h-52">
+        <div className="mx-auto ">
+          <h3 className="font-sans text-3xl font-extrabold ">
+            Grow Your Business. <br /> Build Great Products.
+          </h3>
+        </div>
+        <img
+          className="absolute bottom-0 right-7 w-1/5"
+          src="../HandsAds.png"
+          alt="Hand Ads"
+        />
+
+        <img className="absolute left-0 w-1/5" src="../logoAds.png" alt="" />
+      </div>
     </>
   );
 };

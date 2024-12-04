@@ -8,7 +8,7 @@ import BlogListComponent from "../components/BlogListComponent";
 const BlogListPage = () => {
   return (
     <>
-      <HeaderComponent />
+      <HeaderComponent title={"We write article with love."} />
       <BlogListComponent />
       <AdsComponent />
       <FooterComponent />

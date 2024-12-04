@@ -7,7 +7,7 @@ import AdsComponent from "../components/AdsComponent";
 const BlogDetailPage = () => {
   return (
     <>
-      <HeaderComponent />
+      <HeaderComponent title={"Read best articles from us."} />
       <BlogDetailComponent />
       <AdsComponent />
       <FooterComponent />
