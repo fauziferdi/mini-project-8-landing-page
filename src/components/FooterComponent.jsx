@@ -120,6 +120,31 @@ const FooterComponent = () => {
                       target="_blank"
                       class="text-white transition hover:text-white/75"
                     >
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      rel="noreferrer"
+                      target="_blank"
+                      class="text-white transition hover:text-white/75"
+                    >
+                      Terms
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="pb-10 text-xl ">
+                <ul class=" flex justify-center gap-6 sm:justify-start md:gap-8">
+                  <li>
+                    <a
+                      href="#"
+                      rel="noreferrer"
+                      target="_blank"
+                      class="text-white transition hover:text-white/75"
+                    >
                       <FaTwitter />
                     </a>
                   </li>
@@ -145,10 +170,6 @@ const FooterComponent = () => {
                   </li>
                 </ul>
               </div>
-
-              <p class="mt-4 text-sm text-white sm:order-first sm:mt-0">
-                &copy; 2022 Company Name
-              </p>
             </div>
           </div>
         </div>
