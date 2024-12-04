@@ -1,9 +1,16 @@
 import React from "react";
+import HeaderComponent from "../components/HeaderComponent";
+import DetailComponent from "../components/DetailComponent";
+import AdsComponent from "../components/AdsComponent";
+import FooterComponent from "../components/FooterComponent";
 
 const OurWorksDetailPage = () => {
   return (
     <>
-      <h1>Our Works Detail Page</h1>
+      <HeaderComponent title={"We work with love."} />
+      <DetailComponent />
+      <AdsComponent />
+      <FooterComponent />
     </>
   );
 };

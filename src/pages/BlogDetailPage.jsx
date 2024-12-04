@@ -1,14 +1,14 @@
 import React from "react";
 import HeaderComponent from "../components/HeaderComponent";
-import BlogDetailComponent from "../components/BlogDetailComponent";
 import FooterComponent from "../components/FooterComponent";
 import AdsComponent from "../components/AdsComponent";
+import DetailComponent from "../components/DetailComponent";
 
 const BlogDetailPage = () => {
   return (
     <>
       <HeaderComponent title={"Read best articles from us."} />
-      <BlogDetailComponent />
+      <DetailComponent />
       <AdsComponent />
       <FooterComponent />
     </>

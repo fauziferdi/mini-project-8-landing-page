@@ -2,7 +2,7 @@ import React from "react";
 
 const StatComponent = () => {
   return (
-    <div class=" mx-auto max-w-screenpx-4 py-8 my-8 bg-black sm:px-6 sm:py-4 ">
+    <div class=" mx-auto max-w-screen px-4 py-8 my-8 bg-black sm:px-6 sm:py-4 ">
       <dl class="mt-6 grid grid-cols-1 gap-4 sm:mt-4 sm:grid-cols-2 lg:grid-cols-4">
         <div class="flex flex-col  px-4 py-8 text-left">
           <dt class=" mt-2 order-last text-lg font-medium text-white">
