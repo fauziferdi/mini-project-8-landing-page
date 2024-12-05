@@ -4,6 +4,10 @@ import MainInfoComponent from "../components/MainInfoComponent";
 import FooterComponent from "../components/FooterComponent";
 import AdsComponent from "../components/AdsComponent";
 import TestimonialComponent from "../components/TestimonialComponent";
+import BlogSectionHomeComponent from "../components/BlogSectionHomeComponent";
+import BrandComponent from "../components/BrandComponent";
+import OurProcessComponent from "../components/OurProcessComponent";
+import PastWorksComponent from "../components/PastWorksComponent";
 
 const HomePage = () => {
   return (
@@ -11,7 +15,11 @@ const HomePage = () => {
       <HeaderComponent title={"home"} />
       <MainInfoComponent />
       <hr />
+      <PastWorksComponent />
+      <OurProcessComponent />
       <TestimonialComponent />
+      <BrandComponent />
+      <BlogSectionHomeComponent />
       <AdsComponent />
       <FooterComponent />
     </>
