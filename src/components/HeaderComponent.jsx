@@ -26,8 +26,8 @@ const HeaderComponent = ({ title, handsAll = false }) => {
 
   return (
     <>
-      <section class="bg-primary">
-        <div class="relative mx-auto max-w-screen-xl px-4 py-30 flex h-screen items-center">
+      <section className="bg-primary">
+        <div className="relative flex items-center h-screen max-w-screen-xl px-4 mx-auto py-30">
           <div
             className={`absolute top-0 left-0 right-0 flex items-center justify-between w-full px-4 py-4 transition-all duration-300 ${
               isSticky ? "bg-white shadow-md py-2" : ""
@@ -58,8 +58,8 @@ const HeaderComponent = ({ title, handsAll = false }) => {
             </div>
           )}
 
-          <div class="mx-auto max-w-3xl text-center">
-            <h1 class="font-sansbold text-3xl font-extrabold mb-56 sm:text-7xl">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="mb-56 text-3xl font-extrabold font-sansbold sm:text-7xl">
               {title}
             </h1>
           </div>

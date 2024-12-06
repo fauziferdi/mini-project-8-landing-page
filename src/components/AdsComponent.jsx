@@ -3,14 +3,14 @@ import React from "react";
 const AdsComponent = () => {
   return (
     <>
-      <div class="relative bg-primary px-4 py-3 flex items-center h-52">
+      <div className="relative flex items-center px-4 py-3 bg-primary h-52">
         <div className="mx-auto ">
           <h3 className="font-sans text-3xl font-extrabold ">
             Grow Your Business. <br /> Build Great Products.
           </h3>
         </div>
         <img
-          className="absolute bottom-0 right-7 w-1/5"
+          className="absolute bottom-0 w-1/5 right-7"
           src="../HandsAds.png"
           alt="Hand Ads"
         />

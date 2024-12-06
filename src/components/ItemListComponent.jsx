@@ -1,37 +1,38 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const ItemListComponent = ({ blog }) => {
   return (
     <>
-      <article class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+      <article className="overflow-hidden bg-white border border-gray-100 rounded-lg shadow-sm">
         <img
           alt={blog.title}
           src={blog.banner}
-          class="h-80 w-full object-cover px-5 pt-5"
+          className="object-cover w-full px-5 pt-5 h-80"
         />
 
-        <div class="p-4 sm:p-6">
-          <a href={"/blog/" + blog.slug}>
-            <h3 class="text-lg font-sans font-extrabold text-gray-900">
+        <div className="p-4 sm:p-6">
+          <Link to={"/blog/" + blog.slug}>
+            <h3 className="font-sans text-lg font-extrabold text-gray-900">
               {blog.title}
             </h3>
-          </a>
+          </Link>
 
-          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+          <p className="mt-2 text-gray-500 line-clamp-3 text-sm/relaxed">
             {blog.content}
           </p>
 
-          <a
-            href={"../blog/" + blog.slug}
-            class="group mt-4 inline-flex items-center gap-1 text-sm font-bold"
+          <Link
+            to={"../blog/" + blog.slug}
+            className="inline-flex items-center gap-1 mt-4 text-sm font-bold group"
           >
             Read More
             <span
               aria-hidden="true"
-              class="block transition-all group-hover:ms-0.5 rtl:rotate-180"
+              className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
             >
               &rarr;
             </span>
-          </a>
+          </Link>
         </div>
       </article>
     </>

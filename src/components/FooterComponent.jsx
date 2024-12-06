@@ -1,25 +1,26 @@
 import React from "react";
 import { FaFacebookF, FaGooglePlusG, FaTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const FooterComponent = () => {
   return (
     <>
-      <footer class="bg-black mt-16">
-        <div class="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
-          <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <footer className="mt-16 bg-black">
+        <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
-              <div class="flex justify-center text-white sm:justify-start">
+              <div className="flex justify-center text-white sm:justify-start">
                 <img src="../Logo.svg" alt="" />
               </div>
 
-              <p class="mt-6 max-w-md text-center leading-relaxed text-white sm:max-w-xs sm:text-left">
+              <p className="max-w-md mt-6 leading-relaxed text-center text-white sm:max-w-xs sm:text-left">
                 Dsgnr. is an award winning creative and design agency based in
                 New York, USA.
               </p>
 
-              <div className="flex w-72 justify-center items-center mt-8 border border-primary p-2 sm:justify-start ">
+              <div className="flex items-center justify-center p-2 mt-8 border w-72 border-primary sm:justify-start ">
                 <img
-                  className="ml-2 w-4"
+                  className="w-4 ml-2"
                   src="../sms-notification.svg"
                   alt=""
                 />
@@ -27,146 +28,146 @@ const FooterComponent = () => {
               </div>
             </div>
 
-            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2  md:grid-cols-4 lg:col-span-2">
-              <div class="text-center sm:text-left"></div>
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
+              <div className="text-center sm:text-left"></div>
 
-              <div class="text-center sm:text-left">
-                <p class="text-lg font-medium text-white">What We Do</p>
+              <div className="text-center sm:text-left">
+                <p className="text-lg font-medium text-white">What We Do</p>
 
-                <ul class="mt-8 space-y-4 text-sm">
+                <ul className="mt-8 space-y-4 text-sm">
                   <li>
-                    <a
-                      class="text-white transition hover:text-white/75"
-                      href="#"
+                    <Link
+                      className="text-white transition hover:text-white/75"
+                      to="#"
                     >
                       Web Development
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      class="text-white transition hover:text-white/75"
-                      href="#"
+                    <Link
+                      className="text-white transition hover:text-white/75"
+                      to="#"
                     >
                       Web Design
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      class="text-white transition hover:text-white/75"
-                      href="#"
+                    <Link
+                      className="text-white transition hover:text-white/75"
+                      to="#"
                     >
                       Marketing
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      class="text-white transition hover:text-white/75"
-                      href="#"
+                    <Link
+                      className="text-white transition hover:text-white/75"
+                      to="#"
                     >
                       Google Ads
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
 
-              <div class="text-center sm:text-left">
-                <p class="text-lg font-medium text-white">Who We Are</p>
+              <div className="text-center sm:text-left">
+                <p className="text-lg font-medium text-white">Who We Are</p>
 
-                <ul class="mt-8 space-y-4 text-sm">
+                <ul className="mt-8 space-y-4 text-sm">
                   <li>
-                    <a
-                      class="text-white transition hover:text-white/75"
-                      href="#"
+                    <Link
+                      className="text-white transition hover:text-white/75"
+                      to="/about"
                     >
                       About
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      class="text-white transition hover:text-white/75"
-                      href="#"
+                    <Link
+                      className="text-white transition hover:text-white/75"
+                      to="/blog"
                     >
                       News
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      class="text-white transition hover:text-white/75"
-                      href="#"
+                    <Link
+                      className="text-white transition hover:text-white/75"
+                      to="/our-works"
                     >
                       Testimonials
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
 
-              <div class="text-center sm:text-left"></div>
+              <div className="text-center sm:text-left"></div>
             </div>
           </div>
 
-          <div class="mt-12  pt-6">
-            <div class="text-center sm:flex sm:justify-between sm:text-left">
-              <div class="pb-10 text-xl ">
-                <ul class=" flex justify-center gap-6 sm:justify-start md:gap-8">
+          <div className="pt-6 mt-12">
+            <div className="text-center sm:flex sm:justify-between sm:text-left">
+              <div className="pb-10 text-xl ">
+                <ul className="flex justify-center gap-6 sm:justify-start md:gap-8">
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       rel="noreferrer"
                       target="_blank"
-                      class="text-white transition hover:text-white/75"
+                      className="text-white transition hover:text-white/75"
                     >
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       rel="noreferrer"
                       target="_blank"
-                      class="text-white transition hover:text-white/75"
+                      className="text-white transition hover:text-white/75"
                     >
                       Terms
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
 
-              <div class="pb-10 text-xl ">
-                <ul class=" flex justify-center gap-6 sm:justify-start md:gap-8">
+              <div className="pb-10 text-xl ">
+                <ul className="flex justify-center gap-6 sm:justify-start md:gap-8">
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       rel="noreferrer"
                       target="_blank"
-                      class="text-white transition hover:text-white/75"
+                      className="text-white transition hover:text-white/75"
                     >
                       <FaTwitter />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       rel="noreferrer"
                       target="_blank"
-                      class="text-white transition hover:text-white/75"
+                      className="text-white transition hover:text-white/75"
                     >
                       <FaFacebookF />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       rel="noreferrer"
                       target="_blank"
-                      class="text-white transition hover:text-white/75"
+                      className="text-white transition hover:text-white/75"
                     >
                       <FaGooglePlusG />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

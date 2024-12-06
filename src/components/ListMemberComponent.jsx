@@ -17,9 +17,9 @@ const ListMemberComponent = () => {
         <h2 className="pb-10 font-sans text-4xl font-extrabold text-center">
           Meet the heroes behind the magic
         </h2>
-        <div class="grid grid-cols-1 gap-4  lg:grid-cols-3 lg:gap-8 ">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 ">
           {teams.map((team, index) => (
-            <div key={index + 1} class=" rounded-lg bg-gray-200">
+            <div key={index + 1} className="bg-gray-200 rounded-lg ">
               <ItemMemberComponent team={team} />
             </div>
           ))}

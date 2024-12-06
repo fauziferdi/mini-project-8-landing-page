@@ -8,7 +8,7 @@ const BlogDetailComponentCopy = () => {
           <div className="col-md"></div>
           <div className="col-md-9">
             <img
-              class="mx-auto d-block tw-w-full tw-h-80 tw-object-cover"
+              className="mx-auto d-block tw-w-full tw-h-80 tw-object-cover"
               src="https://s3-alpha-sig.figma.com/img/e801/b082/093374546a34b0e00a02eac8b92277c8?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F2JL-XLH~67stWPzRzKZ5Vxx-7RwZgcJHSSfZPslCRxCR1qiyOD91VCJtgnMhatYcdV8cLfuuZZP8y5BGEO0DJ~i3dM9mnprI~gEmOFdLwixWQclmqgBGvQec3TfqtnL1euJe8uibnsQOWZLFas4wFqv0EkEYPuvTstKaHFVKB8A5mtXXyprc5Uw6p~DawGCNWxBfizibi1aly6os742s1Af3YTWqQeIa27jpfRFRs06iVikrThstYmc~aPujh3RTpL~En~7W87pnFbg-yW9xKtSNJEtPLKf6r4Fq~Z1sdRd9kXNKkuNfvedcP3Da~-N2CBfnBK1Hx~pbyraeIoL~w__"
               alt=""
             />
@@ -17,7 +17,7 @@ const BlogDetailComponentCopy = () => {
               with no-code tools
             </h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
+              Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. It has

@@ -3,12 +3,12 @@ import React from "react";
 const FormContactUs = () => {
   return (
     <>
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-4 mt-10 mx-10 lg:grid-cols-2 lg:gap-8">
-          <div class="flex justify-center items-center">
+      <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-4 mx-10 mt-10 lg:grid-cols-2 lg:gap-8">
+          <div className="flex items-center justify-center">
             <img className="w-2/3" src="../sideImageContact.png" alt="" />
           </div>
-          <div class="">
+          <div className="">
             <h1 className="my-5 font-sans text-2xl font-extrabold text-right">
               We'd love to hear <br /> from you
             </h1>
@@ -17,21 +17,21 @@ const FormContactUs = () => {
                 type="text"
                 id="name"
                 placeholder="Name*"
-                class="my-2 w-full border-gray-400 shadow-sm sm:text-sm"
+                className="w-full my-2 border-gray-400 shadow-sm sm:text-sm"
                 required
               />
               <input
                 type="email"
                 id="email"
                 placeholder="Email*"
-                class="my-2 w-full border-gray-400 shadow-sm sm:text-sm"
+                className="w-full my-2 border-gray-400 shadow-sm sm:text-sm"
                 required
               />
               <input
                 type="text"
                 id="url"
                 placeholder="Website Url*"
-                class="my-2 w-full border-gray-400 shadow-sm sm:text-sm"
+                className="w-full my-2 border-gray-400 shadow-sm sm:text-sm"
                 required
               />
               <textarea
@@ -39,10 +39,10 @@ const FormContactUs = () => {
                 rows="4"
                 id="project"
                 placeholder="Project Detail*"
-                class="my-2 w-full border-gray-400 shadow-sm sm:text-sm"
+                className="w-full my-2 border-gray-400 shadow-sm sm:text-sm"
                 required
               />
-              <button class="bg-black hover:bg-gray-800 text-white  py-2 px-4 rounded w-full sm:text-sm">
+              <button className="w-full px-4 py-2 text-white bg-black rounded hover:bg-gray-800 sm:text-sm">
                 Send Proposal
               </button>
             </form>
