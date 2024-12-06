@@ -26,7 +26,7 @@ const StatComponent = () => {
 
         <div className="flex flex-col px-4 py-8 text-left">
           <dt className="order-last mt-2 text-lg font-medium text-white ">
-            TProject Completed
+            Project Completed
           </dt>
 
           <dd className="text-4xl font-extrabold text-primary md:text-5xl">
