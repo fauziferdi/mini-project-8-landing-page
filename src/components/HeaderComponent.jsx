@@ -1,6 +1,11 @@
 import PropTypes from "prop-types";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import LogoNav from "../assets/image/LogoNav.png";
+import Hamburger from "../assets/image/Hamburger.png";
+import Mouse from "../assets/image/mouse.svg";
+import HandsAll from "../assets/image/HandsAll.png";
+import Hands from "../assets/image/Hands.png";
 
 const HeaderComponent = ({ title, handsAll }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,14 +40,10 @@ const HeaderComponent = ({ title, handsAll }) => {
             }`}
           >
             <Link to="/">
-              <img className="w-24" src="src/assets/image/LogoNav.png" alt="" />
+              <img className="w-24" src={LogoNav} alt="" />
             </Link>
             <button onClick={toggleMenu}>
-              <img
-                className="w-10"
-                src="src/assets/image/Hamburger.png"
-                alt=""
-              />
+              <img className="w-10" src={Hamburger} alt="" />
             </button>
           </div>
 
@@ -73,19 +74,19 @@ const HeaderComponent = ({ title, handsAll }) => {
             <div>
               <img
                 className="absolute mt-5 -translate-x-1/2 bottom-3/1 left-1/2"
-                src="src/assets/image/mouse.svg"
+                src={Mouse}
                 alt=""
               />
               <img
                 className="absolute bottom-0 -translate-x-1/2 left-1/2"
-                src="src/assets/image/HandsAll.png"
+                src={HandsAll}
                 alt=""
               />
             </div>
           ) : (
             <img
               className="absolute bottom-0 w-1/2 right-7"
-              src="src/assets/image/Hands.png"
+              src={Hands}
               alt=""
             />
           )}
@@ -99,11 +100,11 @@ const HeaderComponent = ({ title, handsAll }) => {
       >
         <div className="container flex items-center justify-between mx-auto">
           <Link to="/">
-            <img className="w-24" src="src/assets/image/LogoNav.png" alt="" />
+            <img className="w-24" src={LogoNav} alt="" />
           </Link>
 
           <button onClick={toggleMenu}>
-            <img className="w-10" src="src/assets/image/Hamburger.png" alt="" />
+            <img className="w-10" src={Hamburger} alt="" />
           </button>
 
           {isMenuOpen && (

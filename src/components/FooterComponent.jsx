@@ -1,6 +1,8 @@
 import React from "react";
 import { FaFacebookF, FaGooglePlusG, FaTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import Logo from "../assets/image/logo.svg";
+import SmsNotification from "../assets/image/sms-notification.svg";
 
 const FooterComponent = () => {
   return (
@@ -10,7 +12,7 @@ const FooterComponent = () => {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <div className="flex justify-center text-white sm:justify-start">
-                <img src="src/assets/image/Logo.svg" alt="" />
+                <img src={Logo} alt="" />
               </div>
 
               <p className="max-w-md mt-6 leading-relaxed text-center text-white sm:max-w-xs sm:text-left">
@@ -19,11 +21,7 @@ const FooterComponent = () => {
               </p>
 
               <div className="flex items-center justify-center p-2 mt-8 border w-72 border-primary sm:justify-start ">
-                <img
-                  className="w-4 ml-2"
-                  src="src/assets/image/sms-notification.svg"
-                  alt=""
-                />
+                <img className="w-4 ml-2" src={SmsNotification} alt="" />
                 <p className="ml-16 text-white"> info@dsgnr.com</p>
               </div>
             </div>

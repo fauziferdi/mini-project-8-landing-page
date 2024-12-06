@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import useForm from "../assets/hooks/useForm";
 import { addContact } from "../redux/slices/ContactSlice";
 import Swal from "sweetalert2";
+import sideImageContact from "../assets/image/sideImageContact.png";
 
 const FormContactUs = () => {
   const dispatch = useDispatch();
@@ -53,11 +54,7 @@ const FormContactUs = () => {
       <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-4 mx-10 mt-10 lg:grid-cols-2 lg:gap-8">
           <div className="flex items-center justify-center">
-            <img
-              className="w-2/3"
-              src="src/assets/image/sideImageContact.png"
-              alt=""
-            />
+            <img className="w-2/3" src={sideImageContact} alt="" />
           </div>
           <div className="">
             <h1 className="my-5 font-sans text-2xl font-extrabold text-right">

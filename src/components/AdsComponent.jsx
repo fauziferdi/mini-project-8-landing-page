@@ -1,4 +1,6 @@
 import React from "react";
+import HandsAds from "../assets/image/HandsAds.png";
+import LogoAds from "../assets/image/logoAds.png";
 
 const AdsComponent = () => {
   return (
@@ -11,15 +13,11 @@ const AdsComponent = () => {
         </div>
         <img
           className="absolute bottom-0 w-1/5 right-7"
-          src="src/assets/image/HandsAds.png"
+          src={HandsAds}
           alt="Hand Ads"
         />
 
-        <img
-          className="absolute left-0 w-1/5"
-          src="src/assets/image/logoAds.png"
-          alt=""
-        />
+        <img className="absolute left-0 w-1/5" src={LogoAds} alt="" />
       </div>
     </>
   );

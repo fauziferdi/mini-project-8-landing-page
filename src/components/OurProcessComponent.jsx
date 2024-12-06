@@ -1,4 +1,8 @@
 import React from "react";
+import OurProcess from "../assets/image/ourProcess.png";
+import Idea from "../assets/image/idea.png";
+import Execution from "../assets/image/iexecution.png";
+import Launch from "../assets/image/ilaunch.png";
 
 const OurProcessComponent = () => {
   return (
@@ -6,11 +10,7 @@ const OurProcessComponent = () => {
       <div className="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-4 mt-8 md:grid-cols-2 md:gap-8">
           <div className="flex items-center justify-center pl-20">
-            <img
-              className="w-full"
-              src="src/assets/image/ourProcess.png"
-              alt=""
-            />
+            <img className="w-full" src={OurProcess} alt="Our Process" />
           </div>
           <div className="flex flex-col items-center justify-left md:mt-20">
             <h3 className="text-3xl font-bold text-gray-900">
@@ -18,8 +18,8 @@ const OurProcessComponent = () => {
             </h3>
             <div className="flex gap-4 mt-5 ">
               <img
-                alt="idea"
-                src="src/assets/image/idea.png"
+                alt="Idea"
+                src={Idea}
                 className="object-cover rounded-full size-16"
               />
 
@@ -35,8 +35,8 @@ const OurProcessComponent = () => {
             </div>
             <div className="flex gap-4 mt-5 ">
               <img
-                alt="execution"
-                src="src/assets/image/iexecution.png"
+                alt="Execution"
+                src={Execution}
                 className="object-cover rounded-full size-16"
               />
 
@@ -53,8 +53,8 @@ const OurProcessComponent = () => {
             </div>
             <div className="flex gap-4 mt-5 ">
               <img
-                alt="launch"
-                src="src/assets/image/ilaunch.png"
+                alt="Launch"
+                src={Launch}
                 className="object-cover rounded-full size-16"
               />
 

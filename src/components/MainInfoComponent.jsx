@@ -1,5 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PenTool from "../assets/image/pen-tool-2.svg";
+import SearchNormal from "../assets/image/search-normal.svg";
+import Briefcase from "../assets/image/briefcase.svg";
+import Scroll from "../assets/image/scroll.svg";
+import Hello from "../assets/image/Hello.png";
 
 const MainInfoComponent = () => {
   return (
@@ -12,11 +17,7 @@ const MainInfoComponent = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <img
-                className="fill-red-500"
-                src="src/assets/image/pen-tool-2.svg"
-                alt=""
-              />
+              <img className="fill-red-500" src={PenTool} alt="Pen Tool" />
             </div>
           </div>
 
@@ -26,7 +27,7 @@ const MainInfoComponent = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <img src="src/assets/image/search-normal.svg" alt="" />
+              <img src={SearchNormal} alt="Search" />
             </div>
           </div>
 
@@ -36,7 +37,7 @@ const MainInfoComponent = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <img src="src/assets/image/briefcase.svg" alt="" />
+              <img src={Briefcase} alt="Briefcase" />
             </div>
           </div>
 
@@ -46,7 +47,7 @@ const MainInfoComponent = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <img src="src/assets/image/scroll.svg" alt="" />
+              <img src={Scroll} alt="Scroll" />
             </div>
           </div>
         </div>
@@ -54,7 +55,7 @@ const MainInfoComponent = () => {
         <div className="grid grid-cols-1 gap-4 mg-6 sm:mt-8 sm:grid-cols-3 lg:grid-cols-3">
           <div className="flex flex-col items-center justify-center px-4 py-8 text-center">
             <div className="mt-8 text-gray-500">
-              <img className="w-60" src="src/assets/image/Hello.png" alt="" />
+              <img className="w-60" src={Hello} alt="Hello" />
             </div>
           </div>
           <div className="flex flex-col px-4 py-8 text-right">
