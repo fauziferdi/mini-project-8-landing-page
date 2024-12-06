@@ -103,11 +103,19 @@ const HeaderComponent = ({ title, handsAll }) => {
       >
         <div className="container flex items-center justify-between mx-auto">
           <Link to="/">
-            <img className="w-24" src="LogoNav.png" alt="" />
+            <img
+              className="w-24"
+              src="../src/assets/image/LogoNav.png"
+              alt=""
+            />
           </Link>
 
           <button onClick={toggleMenu}>
-            <img className="w-10" src="Hamburger.png" alt="" />
+            <img
+              className="w-10"
+              src="../src/assets/image/Hamburger.png"
+              alt=""
+            />
           </button>
 
           {isMenuOpen && (
