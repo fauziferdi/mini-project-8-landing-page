@@ -6,6 +6,7 @@ import BrandComponent from "../components/BrandComponent";
 import AdsComponent from "../components/AdsComponent";
 import FooterComponent from "../components/FooterComponent";
 import MouseComponent from "../components/MouseComponent";
+import PropTypes from "prop-types";
 
 const ContactUsPage = () => {
   return (
@@ -25,3 +26,8 @@ const ContactUsPage = () => {
 };
 
 export default ContactUsPage;
+
+HeaderComponent.propTypes = {
+  title: PropTypes.string.isRequired,
+  handsAll: PropTypes.bool.isRequired,
+};

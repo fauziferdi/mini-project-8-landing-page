@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchPortofolioDetail } from "../redux/slices/PortofolioSlice";
 import { useEffect } from "react";
 import MouseComponent from "../components/MouseComponent";
+import PropTypes from "prop-types";
 
 const OurWorksDetailPage = () => {
   const { id } = useParams();
@@ -30,3 +31,8 @@ const OurWorksDetailPage = () => {
 };
 
 export default OurWorksDetailPage;
+
+HeaderComponent.propTypes = {
+  title: PropTypes.string.isRequired,
+  handsAll: PropTypes.bool.isRequired,
+};

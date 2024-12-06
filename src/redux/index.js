@@ -3,6 +3,7 @@ import blogSliceReducer from "./slices/BlogSlice";
 import teamSliceReducer from "./slices/TeamSlice";
 import testimonialReducer from "./slices/TestimonialSlice";
 import portofolioReducer from "./slices/PortofolioSlice";
+import contactReducer from "./slices/ContactSlice";
 
 export const store = configureStore({
   reducer: {
@@ -10,5 +11,6 @@ export const store = configureStore({
     team: teamSliceReducer,
     testimonial: testimonialReducer,
     portofolio: portofolioReducer,
+    contact: contactReducer,
   },
 });
