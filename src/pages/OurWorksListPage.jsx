@@ -5,6 +5,7 @@ import BrandComponent from "../components/BrandComponent";
 import AdsComponent from "../components/AdsComponent";
 import FooterComponent from "../components/FooterComponent";
 import OurWorksListComponent from "../components/OurWorksListComponent";
+import PropTypes from "prop-types";
 
 const OurWorksListPage = () => {
   return (
@@ -22,3 +23,8 @@ const OurWorksListPage = () => {
 };
 
 export default OurWorksListPage;
+
+HeaderComponent.propTypes = {
+  title: PropTypes.string.isRequired,
+  handsAll: PropTypes.bool.isRequired,
+};

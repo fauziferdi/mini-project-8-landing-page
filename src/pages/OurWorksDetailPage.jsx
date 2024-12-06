@@ -20,7 +20,7 @@ const OurWorksDetailPage = () => {
 
   return (
     <>
-      <HeaderComponent title={"We work with love."} />
+      <HeaderComponent title={"We work with love."} handsAll={false} />
       <MouseComponent />
       <DetailComponent data={portofolio} />
       <AdsComponent />

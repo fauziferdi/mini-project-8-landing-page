@@ -10,7 +10,10 @@ import MouseComponent from "../components/MouseComponent";
 const ContactUsPage = () => {
   return (
     <>
-      <HeaderComponent title={"We would love to hear from you."} />
+      <HeaderComponent
+        title={"We would love to hear from you."}
+        handsAll={false}
+      />
       <MouseComponent />
       <FormContactUs />
       <StatComponent />

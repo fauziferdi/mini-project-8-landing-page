@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const HeaderComponent = ({ title, handsAll = false }) => {
+const HeaderComponent = ({ title, handsAll }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -29,20 +30,28 @@ const HeaderComponent = ({ title, handsAll = false }) => {
       <section className="bg-primary">
         <div className="relative flex items-center h-screen max-w-screen-xl px-4 mx-auto py-30">
           <div
-            className={`absolute top-0 left-0 right-0 flex items-center justify-between w-full px-4 py-4 transition-all duration-300 ${
+            className={`absolute top-0 left-0 right-0 flex items-center justify-between w-full z-50 px-4 py-4 transition-all duration-300 ${
               isSticky ? "bg-white shadow-md py-2" : ""
             }`}
           >
             <Link to="/">
-              <img className="w-24" src="../LogoNav.png" alt="" />
+              <img
+                className="w-24"
+                src="../src/assets/image/LogoNav.png"
+                alt=""
+              />
             </Link>
             <button onClick={toggleMenu}>
-              <img className="w-10" src="../Hamburger.png" alt="" />
+              <img
+                className="w-10"
+                src="../src/assets/image/Hamburger.png"
+                alt=""
+              />
             </button>
           </div>
 
           {isMenuOpen && (
-            <div className="absolute px-10 py-2 bg-white rounded shadow-md top-14 right-12">
+            <div className="absolute z-40 px-10 py-2 bg-white rounded shadow-md top-14 right-12">
               <Link to="/" className="block py-1 hover:font-bold">
                 Home
               </Link>
@@ -58,7 +67,7 @@ const HeaderComponent = ({ title, handsAll = false }) => {
             </div>
           )}
 
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="z-20 max-w-3xl mx-auto text-center">
             <h1 className="mb-56 text-3xl font-extrabold font-sansbold sm:text-7xl">
               {title}
             </h1>
@@ -68,19 +77,19 @@ const HeaderComponent = ({ title, handsAll = false }) => {
             <div>
               <img
                 className="absolute mt-5 -translate-x-1/2 bottom-3/1 left-1/2"
-                src="../mouse.svg"
+                src="../src/assets/image/mouse.svg"
                 alt=""
               />
               <img
                 className="absolute bottom-0 -translate-x-1/2 left-1/2"
-                src="../HandsAll.png"
+                src="../src/assets/image/HandsAll.png"
                 alt=""
               />
             </div>
           ) : (
             <img
               className="absolute bottom-0 w-1/2 right-7"
-              src="../Hands.png"
+              src="../src/assets/image/Hands.png"
               alt=""
             />
           )}
@@ -94,11 +103,11 @@ const HeaderComponent = ({ title, handsAll = false }) => {
       >
         <div className="container flex items-center justify-between mx-auto">
           <Link to="/">
-            <img className="w-24" src="../LogoNav.png" alt="" />
+            <img className="w-24" src="LogoNav.png" alt="" />
           </Link>
 
           <button onClick={toggleMenu}>
-            <img className="w-10" src="../Hamburger.png" alt="" />
+            <img className="w-10" src="Hamburger.png" alt="" />
           </button>
 
           {isMenuOpen && (
@@ -124,3 +133,8 @@ const HeaderComponent = ({ title, handsAll = false }) => {
 };
 
 export default HeaderComponent;
+
+HeaderComponent.propTypes = {
+  title: PropTypes.string.isRequired,
+  handsAll: PropTypes.bool.isRequired,
+};

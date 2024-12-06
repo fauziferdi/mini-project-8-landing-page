@@ -10,7 +10,7 @@ const FooterComponent = () => {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <div className="flex justify-center text-white sm:justify-start">
-                <img src="../Logo.svg" alt="" />
+                <img src="../src/assets/image/Logo.svg" alt="" />
               </div>
 
               <p className="max-w-md mt-6 leading-relaxed text-center text-white sm:max-w-xs sm:text-left">
@@ -21,7 +21,7 @@ const FooterComponent = () => {
               <div className="flex items-center justify-center p-2 mt-8 border w-72 border-primary sm:justify-start ">
                 <img
                   className="w-4 ml-2"
-                  src="../sms-notification.svg"
+                  src="../src/assets/image/sms-notification.svg"
                   alt=""
                 />
                 <p className="ml-16 text-white"> info@dsgnr.com</p>

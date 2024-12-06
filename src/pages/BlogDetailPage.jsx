@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchBlogDetail } from "../redux/slices/BlogSlice";
 import MouseComponent from "../components/MouseComponent";
+import PropTypes from "prop-types";
 
 const BlogDetailPage = () => {
   const { id } = useParams();
@@ -25,7 +26,7 @@ const BlogDetailPage = () => {
   }
   return (
     <>
-      <HeaderComponent title={"Read best articles from us."} />
+      <HeaderComponent title={"Read best articles from us."} handsAll={false} />
       <MouseComponent />
       <DetailComponent data={blog} />
       <AdsComponent />
@@ -35,3 +36,8 @@ const BlogDetailPage = () => {
 };
 
 export default BlogDetailPage;
+
+HeaderComponent.propTypes = {
+  title: PropTypes.string.isRequired,
+  handsAll: PropTypes.bool.isRequired,
+};
