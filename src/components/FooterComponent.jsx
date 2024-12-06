@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaGooglePlusG, FaTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import Logo from "../assets/image/logo.svg";
+import Logo from "../assets/image/Logo.svg";
 import SmsNotification from "../assets/image/sms-notification.svg";
 
 const FooterComponent = () => {
