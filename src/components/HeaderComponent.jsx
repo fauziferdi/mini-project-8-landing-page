@@ -12,7 +12,6 @@ const HeaderComponent = ({ title, handsAll = false }) => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
-        // Ganti 300 dengan posisi header Anda
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -34,7 +33,9 @@ const HeaderComponent = ({ title, handsAll = false }) => {
               isSticky ? "bg-white shadow-md py-2" : ""
             }`}
           >
-            <img className="w-24" src="../LogoNav.png" alt="" />
+            <Link to="/">
+              <img className="w-24" src="../LogoNav.png" alt="" />
+            </Link>
             <button onClick={toggleMenu}>
               <img className="w-10" src="../Hamburger.png" alt="" />
             </button>
@@ -66,7 +67,7 @@ const HeaderComponent = ({ title, handsAll = false }) => {
           {handsAll ? (
             <div>
               <img
-                className="absolute -translate-x-1/2 bottom-2/2 left-1/2"
+                className="absolute mt-5 -translate-x-1/2 bottom-3/1 left-1/2"
                 src="../mouse.svg"
                 alt=""
               />
@@ -92,7 +93,10 @@ const HeaderComponent = ({ title, handsAll = false }) => {
         }`}
       >
         <div className="container flex items-center justify-between mx-auto">
-          <img className="w-24" src="../LogoNav.png" alt="" />
+          <Link to="/">
+            <img className="w-24" src="../LogoNav.png" alt="" />
+          </Link>
+
           <button onClick={toggleMenu}>
             <img className="w-10" src="../Hamburger.png" alt="" />
           </button>

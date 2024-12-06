@@ -1,12 +1,15 @@
 import React from "react";
 
-const ItemPortofolioComponent = () => {
+const ItemPortofolioComponent = ({ portofolio }) => {
   return (
     <>
-      <a href="blog/1" class="group relative block bg-black ">
+      <a
+        href={"our-works/" + portofolio.id}
+        class="group relative block bg-black "
+      >
         <img
-          alt=""
-          src="../porto.png"
+          alt={portofolio.title}
+          src={portofolio.banner}
           class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
         />
 
@@ -14,7 +17,7 @@ const ItemPortofolioComponent = () => {
           <div class="mt-32 sm:mt-48 lg:mt-64">
             <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
               <h3 class="text-xl font-semibold tracking-tight text-center text-white">
-                Portofolio Title
+                {portofolio.title}
               </h3>
             </div>
           </div>

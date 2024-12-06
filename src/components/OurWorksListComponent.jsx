@@ -1,7 +1,16 @@
 import React from "react";
 import ItemPortofolioComponent from "./ItemPortofolioComponent";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchPortofolio } from "../redux/slices/PortofolioSlice";
+import { useEffect } from "react";
 
 const OurWorksListComponent = () => {
+  const dispatch = useDispatch();
+  const { portofolios } = useSelector((state) => state.portofolio);
+
+  useEffect(() => {
+    dispatch(fetchPortofolio());
+  }, []);
   return (
     <section class="bg-gray-50">
       <div class="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-28 lg:py-16 ">
@@ -21,12 +30,11 @@ const OurWorksListComponent = () => {
           </div>
         </div>
         <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 lg:mt-12 ">
-          <ItemPortofolioComponent />
-          <ItemPortofolioComponent />
-          <ItemPortofolioComponent />
-          <ItemPortofolioComponent />
-          <ItemPortofolioComponent />
-          <ItemPortofolioComponent />
+          {portofolios.map((portofolio, index) => (
+            <div key={index + 1}>
+              <ItemPortofolioComponent portofolio={portofolio} />
+            </div>
+          ))}
         </div>
       </div>
     </section>

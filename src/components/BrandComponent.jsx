@@ -1,6 +1,6 @@
 import React from "react";
 
-const BrandComponent = () => {
+const BrandComponent = ({ home = false }) => {
   return (
     <div className="max-w-screen-xl px-5 py-10 mx-auto sm:px-10 sm:py-20">
       <div class="mx-auto max-w-3xl text-center">

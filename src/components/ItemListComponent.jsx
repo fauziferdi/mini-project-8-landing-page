@@ -21,7 +21,7 @@ const ItemListComponent = ({ blog }) => {
           </p>
 
           <a
-            href="#"
+            href={"../blog/" + blog.slug}
             class="group mt-4 inline-flex items-center gap-1 text-sm font-bold"
           >
             Read More

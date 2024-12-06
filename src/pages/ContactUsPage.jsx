@@ -5,13 +5,14 @@ import StatComponent from "../components/StatComponent";
 import BrandComponent from "../components/BrandComponent";
 import AdsComponent from "../components/AdsComponent";
 import FooterComponent from "../components/FooterComponent";
+import MouseComponent from "../components/MouseComponent";
 
 const ContactUsPage = () => {
   return (
     <>
       <HeaderComponent title={"We would love to hear from you."} />
+      <MouseComponent />
       <FormContactUs />
-
       <StatComponent />
       <BrandComponent />
       <AdsComponent />

@@ -1,7 +1,17 @@
 import React from "react";
 import ItemPortofolioComponent from "./ItemPortofolioComponent";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchPortofolio } from "../redux/slices/PortofolioSlice";
+import { useEffect } from "react";
 
 const PastWorksComponent = () => {
+  const dispatch = useDispatch();
+  const { portofolios } = useSelector((state) => state.portofolio);
+
+  useEffect(() => {
+    dispatch(fetchPortofolio());
+  }, []);
+
   return (
     <>
       <section class="bg-white">
@@ -51,30 +61,11 @@ const PastWorksComponent = () => {
           </div>
 
           <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-2 ">
-            <div class=" rounded-lg bg-gray-200">
-              <ItemPortofolioComponent />
-            </div>
-            <div class=" rounded-lg bg-gray-200">
-              <ItemPortofolioComponent />
-            </div>
-            <div class=" rounded-lg bg-gray-200">
-              <ItemPortofolioComponent />
-            </div>
-            <div class=" rounded-lg bg-gray-200">
-              <ItemPortofolioComponent />
-            </div>
-            <div class=" rounded-lg bg-gray-200">
-              <ItemPortofolioComponent />
-            </div>
-            <div class=" rounded-lg bg-gray-200">
-              <ItemPortofolioComponent />
-            </div>
-            <div class=" rounded-lg bg-gray-200">
-              <ItemPortofolioComponent />
-            </div>
-            <div class=" rounded-lg bg-gray-200">
-              <ItemPortofolioComponent />
-            </div>
+            {portofolios.slice(0, 8).map((portofolio, index) => (
+              <div key={index + 1} class=" rounded-lg bg-gray-200">
+                <ItemPortofolioComponent portofolio={portofolio} />
+              </div>
+            ))}
           </div>
         </div>
       </section>

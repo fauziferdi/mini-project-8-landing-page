@@ -21,7 +21,7 @@ const HomePage = () => {
       <PastWorksComponent />
       <OurProcessComponent />
       <TestimonialComponent />
-      <BrandComponent />
+      <BrandComponent home="true" />
       <BlogSectionHomeComponent />
       <AdsComponent />
       <FooterComponent />
