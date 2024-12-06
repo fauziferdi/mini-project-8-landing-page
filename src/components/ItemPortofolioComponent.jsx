@@ -5,7 +5,7 @@ const ItemPortofolioComponent = ({ portofolio }) => {
   return (
     <>
       <Link
-        to={"our-works/" + portofolio.id}
+        to={"/our-works/" + portofolio.id}
         className="relative block bg-black group "
       >
         <img
