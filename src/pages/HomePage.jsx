@@ -12,7 +12,10 @@ import PastWorksComponent from "../components/PastWorksComponent";
 const HomePage = () => {
   return (
     <>
-      <HeaderComponent title={"home"} />
+      <HeaderComponent
+        title={"Let’s create something great together."}
+        handsAll="true"
+      />
       <MainInfoComponent />
       <hr />
       <PastWorksComponent />

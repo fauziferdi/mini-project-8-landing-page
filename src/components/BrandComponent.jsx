@@ -2,7 +2,7 @@ import React from "react";
 
 const BrandComponent = () => {
   return (
-    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 sm:mx-20 lg:p-36 ">
+    <div className="max-w-screen-xl px-5 py-10 mx-auto sm:px-10 sm:py-20">
       <div class="mx-auto max-w-3xl text-center">
         <h2 class=" font-sans text-3xl font-bold text-gray-900 sm:text-4xl">
           We worked with the world’s biggest <br /> brands and the most

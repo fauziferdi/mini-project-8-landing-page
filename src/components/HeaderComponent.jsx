@@ -1,10 +1,62 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const HeaderComponent = ({ title, handsAll = false }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        // Ganti 300 dengan posisi header Anda
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <section class="bg-primary">
-        <div class="relative mx-auto max-w-screen-xl px-4 py-30 lg:flex lg:h-screen lg:items-center">
+        <div class="relative mx-auto max-w-screen-xl px-4 py-30 flex h-screen items-center">
+          <div
+            className={`absolute top-0 left-0 right-0 flex items-center justify-between w-full px-4 py-4 transition-all duration-300 ${
+              isSticky ? "bg-white shadow-md py-2" : ""
+            }`}
+          >
+            <img className="w-24" src="../LogoNav.png" alt="" />
+            <button onClick={toggleMenu}>
+              <img className="w-10" src="../Hamburger.png" alt="" />
+            </button>
+          </div>
+
+          {isMenuOpen && (
+            <div className="absolute px-10 py-2 bg-white rounded shadow-md top-14 right-12">
+              <Link to="/" className="block py-1 hover:font-bold">
+                Home
+              </Link>
+              <Link to="/about" className="block py-1 hover:font-bold ">
+                About
+              </Link>
+              <Link to="/contact" className="block py-1 hover:font-bold">
+                Contact
+              </Link>
+              <Link to="/blog" className="block py-1 hover:font-bold">
+                Blog
+              </Link>
+            </div>
+          )}
+
           <div class="mx-auto max-w-3xl text-center">
             <h1 class="font-sansbold text-3xl font-extrabold mb-56 sm:text-7xl">
               {title}
@@ -14,25 +66,55 @@ const HeaderComponent = ({ title, handsAll = false }) => {
           {handsAll ? (
             <div>
               <img
-                className="absolute  bottom-2/2 left-1/2 -translate-x-1/2"
+                className="absolute -translate-x-1/2 bottom-2/2 left-1/2"
                 src="../mouse.svg"
                 alt=""
               />
               <img
-                className="absolute  bottom-0 left-1/2 -translate-x-1/2"
+                className="absolute bottom-0 -translate-x-1/2 left-1/2"
                 src="../HandsAll.png"
                 alt=""
               />
             </div>
           ) : (
             <img
-              className="absolute bottom-0 right-7 w-1/2"
+              className="absolute bottom-0 w-1/2 right-7"
               src="../Hands.png"
               alt=""
             />
           )}
         </div>
       </section>
+
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 py-2 px-4 transition-all duration-300 ${
+          isSticky ? " bg-primary shadow-md" : "hidden"
+        }`}
+      >
+        <div className="container flex items-center justify-between mx-auto">
+          <img className="w-24" src="../LogoNav.png" alt="" />
+          <button onClick={toggleMenu}>
+            <img className="w-10" src="../Hamburger.png" alt="" />
+          </button>
+
+          {isMenuOpen && (
+            <div className="absolute px-10 py-2 bg-white rounded shadow-md top-12 right-32">
+              <Link to="/" className="block py-1 hover:font-bold">
+                Home
+              </Link>
+              <Link to="/about" className="block py-1 hover:font-bold ">
+                About
+              </Link>
+              <Link to="/contact" className="block py-1 hover:font-bold">
+                Contact
+              </Link>
+              <Link to="/blog" className="block py-1 hover:font-bold">
+                Blog
+              </Link>
+            </div>
+          )}
+        </div>
+      </nav>
     </>
   );
 };
