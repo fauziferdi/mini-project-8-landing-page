@@ -8,7 +8,7 @@ const OurProcessComponent = () => {
           <div className="flex items-center justify-center pl-20">
             <img
               className="w-full"
-              src="../src/assets/image/ourProcess.png"
+              src="src/assets/image/ourProcess.png"
               alt=""
             />
           </div>
@@ -19,7 +19,7 @@ const OurProcessComponent = () => {
             <div className="flex gap-4 mt-5 ">
               <img
                 alt="idea"
-                src="../src/assets/image/idea.png"
+                src="src/assets/image/idea.png"
                 className="object-cover rounded-full size-16"
               />
 
@@ -36,7 +36,7 @@ const OurProcessComponent = () => {
             <div className="flex gap-4 mt-5 ">
               <img
                 alt="execution"
-                src="../src/assets/image/iexecution.png"
+                src="src/assets/image/iexecution.png"
                 className="object-cover rounded-full size-16"
               />
 
@@ -54,7 +54,7 @@ const OurProcessComponent = () => {
             <div className="flex gap-4 mt-5 ">
               <img
                 alt="launch"
-                src="../src/assets/image/ilaunch.png"
+                src="src/assets/image/ilaunch.png"
                 className="object-cover rounded-full size-16"
               />
 

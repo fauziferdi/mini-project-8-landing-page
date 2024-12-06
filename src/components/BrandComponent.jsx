@@ -13,34 +13,34 @@ const BrandComponent = ({ home = false }) => {
 
       <dl className="grid grid-cols-1 mt-6 sm:mt-8 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col items-center justify-center px-4 text-center border-b border-r border-gray-300 py-14">
-          <img className="w-3/4" src="../src/assets/image/spotify.svg" alt="" />
+          <img className="w-3/4" src="src/assets/image/spotify.svg" alt="" />
         </div>
 
         <div className="flex flex-col items-center justify-center px-4 text-center border-b border-r border-gray-300 py-14">
-          <img className="w-3/4" src="../src/assets/image/dropbox.svg" alt="" />
+          <img className="w-3/4" src="src/assets/image/dropbox.svg" alt="" />
         </div>
 
         <div className="flex flex-col items-center justify-center px-4 text-center border-b border-r border-gray-300 py-14">
-          <img className="w-3/4" src="../src/assets/image/tesla.svg" alt="" />
+          <img className="w-3/4" src="src/assets/image/tesla.svg" alt="" />
         </div>
 
         <div className="flex flex-col items-center justify-center px-4 text-center border-b border-gray-300 py-14">
-          <img className="w-3/4" src="../src/assets/image/reddit.svg" alt="" />
+          <img className="w-3/4" src="src/assets/image/reddit.svg" alt="" />
         </div>
         <div className="flex flex-col items-center justify-center px-4 text-center border-r border-gray-300 py-14">
-          <img className="w-3/4" src="../src/assets/image/google.svg" alt="" />
-        </div>
-
-        <div className="flex flex-col items-center justify-center px-4 text-center border-r border-gray-300 py-14">
-          <img className="w-3/4" src="../src/assets/image/stripe.svg" alt="" />
+          <img className="w-3/4" src="src/assets/image/google.svg" alt="" />
         </div>
 
         <div className="flex flex-col items-center justify-center px-4 text-center border-r border-gray-300 py-14">
-          <img className="w-3/4" src="../src/assets/image/dhl.svg" alt="" />
+          <img className="w-3/4" src="src/assets/image/stripe.svg" alt="" />
+        </div>
+
+        <div className="flex flex-col items-center justify-center px-4 text-center border-r border-gray-300 py-14">
+          <img className="w-3/4" src="src/assets/image/dhl.svg" alt="" />
         </div>
 
         <div className="flex flex-col items-center justify-center px-4 text-center border-gray-300 py-14">
-          <img className="w-3/4" src="../src/assets/image/airbnb.svg" alt="" />
+          <img className="w-3/4" src="src/assets/image/airbnb.svg" alt="" />
         </div>
       </dl>
     </div>

@@ -11,13 +11,13 @@ const AdsComponent = () => {
         </div>
         <img
           className="absolute bottom-0 w-1/5 right-7"
-          src="../src/assets/image/HandsAds.png"
+          src="src/assets/image/HandsAds.png"
           alt="Hand Ads"
         />
 
         <img
           className="absolute left-0 w-1/5"
-          src="../src/assets/image/logoAds.png"
+          src="src/assets/image/logoAds.png"
           alt=""
         />
       </div>

@@ -14,7 +14,7 @@ const MainInfoComponent = () => {
             <div className="flex items-center justify-center">
               <img
                 className="fill-red-500"
-                src="../src/assets/image/pen-tool-2.svg"
+                src="src/assets/image/pen-tool-2.svg"
                 alt=""
               />
             </div>
@@ -26,7 +26,7 @@ const MainInfoComponent = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <img src="../src/assets/image/search-normal.svg" alt="" />
+              <img src="src/assets/image/search-normal.svg" alt="" />
             </div>
           </div>
 
@@ -36,7 +36,7 @@ const MainInfoComponent = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <img src="../src/assets/image/briefcase.svg" alt="" />
+              <img src="src/assets/image/briefcase.svg" alt="" />
             </div>
           </div>
 
@@ -46,7 +46,7 @@ const MainInfoComponent = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <img src="../src/assets/image/scroll.svg" alt="" />
+              <img src="src/assets/image/scroll.svg" alt="" />
             </div>
           </div>
         </div>
@@ -54,11 +54,7 @@ const MainInfoComponent = () => {
         <div className="grid grid-cols-1 gap-4 mg-6 sm:mt-8 sm:grid-cols-3 lg:grid-cols-3">
           <div className="flex flex-col items-center justify-center px-4 py-8 text-center">
             <div className="mt-8 text-gray-500">
-              <img
-                className="w-60"
-                src="../src/assets/image/Hello.png"
-                alt=""
-              />
+              <img className="w-60" src="src/assets/image/Hello.png" alt="" />
             </div>
           </div>
           <div className="flex flex-col px-4 py-8 text-right">

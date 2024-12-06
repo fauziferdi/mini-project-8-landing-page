@@ -35,16 +35,12 @@ const HeaderComponent = ({ title, handsAll }) => {
             }`}
           >
             <Link to="/">
-              <img
-                className="w-24"
-                src="../src/assets/image/LogoNav.png"
-                alt=""
-              />
+              <img className="w-24" src="src/assets/image/LogoNav.png" alt="" />
             </Link>
             <button onClick={toggleMenu}>
               <img
                 className="w-10"
-                src="../src/assets/image/Hamburger.png"
+                src="src/assets/image/Hamburger.png"
                 alt=""
               />
             </button>
@@ -77,19 +73,19 @@ const HeaderComponent = ({ title, handsAll }) => {
             <div>
               <img
                 className="absolute mt-5 -translate-x-1/2 bottom-3/1 left-1/2"
-                src="../src/assets/image/mouse.svg"
+                src="src/assets/image/mouse.svg"
                 alt=""
               />
               <img
                 className="absolute bottom-0 -translate-x-1/2 left-1/2"
-                src="../src/assets/image/HandsAll.png"
+                src="src/assets/image/HandsAll.png"
                 alt=""
               />
             </div>
           ) : (
             <img
               className="absolute bottom-0 w-1/2 right-7"
-              src="../src/assets/image/Hands.png"
+              src="src/assets/image/Hands.png"
               alt=""
             />
           )}
@@ -103,19 +99,11 @@ const HeaderComponent = ({ title, handsAll }) => {
       >
         <div className="container flex items-center justify-between mx-auto">
           <Link to="/">
-            <img
-              className="w-24"
-              src="../src/assets/image/LogoNav.png"
-              alt=""
-            />
+            <img className="w-24" src="src/assets/image/LogoNav.png" alt="" />
           </Link>
 
           <button onClick={toggleMenu}>
-            <img
-              className="w-10"
-              src="../src/assets/image/Hamburger.png"
-              alt=""
-            />
+            <img className="w-10" src="src/assets/image/Hamburger.png" alt="" />
           </button>
 
           {isMenuOpen && (

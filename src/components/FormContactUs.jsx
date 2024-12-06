@@ -55,7 +55,7 @@ const FormContactUs = () => {
           <div className="flex items-center justify-center">
             <img
               className="w-2/3"
-              src="../src/assets/image/sideImageContact.png"
+              src="src/assets/image/sideImageContact.png"
               alt=""
             />
           </div>
